@@ -1,0 +1,48 @@
+{% load static %}
+
+<header class="header_area">
+  <nav class="navbar navbar-expand-lg menu_one menu_five">
+    <div class="container">
+      <a class="navbar-brand sticky_logo" href="/">
+        <img src="{% static 'img/logo/logo-white-98.png' %}" srcset="/static/img/logo/logo-white-180.png 2x" alt="a2 logo">
+        <img src="{% static 'img/logo/logo-98.png' %}" srcset="/static/img/logo/logo-180.png 2x" alt="a2 logo">
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="menu_toggle">
+          <span class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="hamburger-cross">
+            <span></span>
+            <span></span>
+          </span>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav menu w_menu pl_120">
+          <li class="nav-item active">
+            <a class="nav-link" href="/" role="button">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about" role="button">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/process" role="button">Process</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/services" role="button">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacts">Contact us</a>
+          </li>
+
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+</header>

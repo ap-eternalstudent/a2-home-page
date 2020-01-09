@@ -1,0 +1,71 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon">
+  <title>A2 Software Development Company</title>
+  
+  <!-- Vendors -->
+  <link rel="stylesheet" href="{% static 'vendors/bootstrap/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/bootstrap-selector/css/bootstrap-select.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/themify-icon/themify-icons.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/flaticon/flaticon.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/font-awesome/font-awesome.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/devicon/devicon.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/animation/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/owl-carousel/assets/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/magnify-pop/magnific-popup.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/nice-select/nice-select.css' %}">
+  
+  <!-- Main -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+  <!-- Google Analytics -->
+  <script async src="//www.googletagmanager.com/gtag/js?id=UA-112482936-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-112482936-1');
+  </script>
+
+  <!-- JavaScript -->
+  <script src="//widget.clutch.co/static/js/widget.js"></script>
+
+  {% block head %}
+  {% endblock head %}
+</head>
+
+<body>
+  {% include 'shared/header.html' %}
+
+  {% block content %}
+  {% endblock content %}
+
+  {% include "shared/footer.html" %}
+
+  <!-- JavaScript -->
+  <script src="{% static 'vendors/jquery/jquery-3.2.1.min.js' %}"></script>
+  <script src="{% static 'vendors/propper/propper.js' %}"></script>
+  <script src="{% static 'vendors/bootstrap/bootstrap.min.js' %}"></script>
+  <script src="{% static 'vendors/bootstrap-selector/js/bootstrap-select.min.js' %}"></script>
+  <script src="{% static 'vendors/wow/wow.min.js' %}"></script>
+  <script src="{% static 'vendors/sckroller/jquery.parallax-scroll.js' %}"></script>
+  <script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'vendors/nice-select/jquery.nice-select.min.js' %}"></script>
+  <script src="{% static 'vendors/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendors/isotope/isotope-min.js' %}"></script>
+  <script src="{% static 'vendors/magnify-pop/jquery.magnific-popup.min.js' %}"></script>
+
+  {% block js %}
+  {% endblock js %}
+
+  <script src="{% static 'js/plugins.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>

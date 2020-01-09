@@ -1,0 +1,91 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+<section class="breadcrumb_area">
+  <img class="breadcrumb_shap" src="{% static 'img/breadcrumb/banner_bg.png' %}" alt="">
+  <div class="container">
+    <div class="breadcrumb_content text-center">
+      <h1 class="f_p f_700 f_size_50 w_color l_height50 mb_20">Our services</h1>
+      <p class="f_300 w_color f_size_16 l_height26">
+        We are skilled engineers and have lots of techniques up our sleeves
+        <br>to tackle any problem
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="prototype_service_info">
+  <div class="symbols-pulse active">
+    <div class="pulse-1"></div>
+    <div class="pulse-2"></div>
+    <div class="pulse-3"></div>
+    <div class="pulse-4"></div>
+    <div class="pulse-x"></div>
+  </div>
+  <div class="container">
+    <h2 class="f_size_30 f_600 t_color3 l_height45 text-center mb_90">
+      These badges are not the limiting factor to our skills, we provide a wide spectrum of services but mostly known for dealing with
+    </h2>
+    <div class="row p_service_info">
+      <div class="col-lg-4 col-sm-6">
+        <div class="p_service_item pr_70">
+          <div class="icon icon_one"><i class="ti-panel"></i></div>
+          <h5 class="f_600 f_p t_color3">AWS</h5>
+          <p class="f_300">
+            Providing our consulting and cloud architecting expertise to tackle any AWS problem your business may face.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="p_service_item pl_50 pr_20">
+          <div class="icon icon_two"><i class="ti-layout-grid2"></i></div>
+          <h5 class="f_600 f_p t_color3">Coding</h5>
+          <p class="f_300">
+            Our coding gurus are ready to undertake and build a software solution for all of your business needs. 
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="p_service_item pl_70">
+          <div class="icon icon_three"><i class="ti-fullscreen"></i></div>
+          <h5 class="f_600 f_p t_color3">Web Develpoment</h5>
+          <p class="f_300">
+            web sites, web apps, and mobile apps we've done it all, and it is all part of the web services we offer.
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="service_details_area sec_pad">
+  <div class="container">
+    <div class="row flex-row-reverse service_details_item">
+      <div class="col-lg-6">
+        <div class="service_details_img ml-0">
+          <img src="{% static 'img/breadcrumb/service_details_one.png' %}" alt="services image">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="service_details pr_120">
+          <h2 class="f_p f_600 f_size_30 t_color3 l_height40 mb-30">
+            There are many projects and we like all of them, our customers come from various fields of business.
+          </h2>
+          <p class="f_600 mb_50">
+            We're experienced in the fields of: 
+          </p>
+          <ul class="list-unstyled mb-30 pl-0 pr_20">
+            <li><i class="ti-check"></i>Health Care</li>
+            <li><i class="ti-check"></i>Insurance</li>
+            <li><i class="ti-check"></i>Digital Marketing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include 'shared/partners.html' %}
+{% endblock content %}

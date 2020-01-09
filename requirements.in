@@ -1,0 +1,9 @@
+django
+django-storages
+django-compressor
+django-recaptcha2
+django-mailgun
+pylint
+flake8
+awscli
+awsebcli

@@ -1,0 +1,487 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+<section class="software_banner_area d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-flex align-items-center">
+        <div class="software_banner_content">
+          <h2 class="f_500 f_size_50 w_color wow fadeInLeft" data-wow-delay="0.2s">
+            Software Development done <span class="f_700">Right</span>
+          </h2>
+          <p class="w_color f_size_18 l_height30 mt_30 wow fadeInLeft" data-wow-delay="0.3s">
+            Professional software developers focusing on backend and cloud technologies.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="software_img wow fadeInRight" data-wow-delay="0.2s">
+          <img src="{% static 'img/cloud/banner_img.png' %}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="software_featured_area">
+  <div class="container">
+    <h2 class="f_600 f_size_30 t_color3 text-center l_height40 mb_70">
+      Developing robust solutions<br>for businesses of all sizes
+    </h2>
+    <div class="row software_featured_info">
+      <div class="col-lg-4 col-sm-6">
+        <div class="software_featured_item text-center mb_20">
+          <div class="s_icon">
+            <img src="{% static 'img/cloud/icon_shape.png' %}" alt="">
+            <img class="icon" src="{% static 'img/cloud/icon1.png' %}" alt="">
+          </div>
+          <h3 class="f_600 t_color3">
+            Coding
+          </h3>
+          <p class="f_300 f_size_15 mb-30">
+            Coding is our favorite thing to do. Our professional developers are thirsty for new and challanging projects. 
+            If you can think of, it we can build it.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="software_featured_item text-center mb_20">
+          <div class="s_icon">
+            <img src="{% static 'img/cloud/icon_shape.png' %}" alt="">
+            <img class="icon" src="{% static 'img/cloud/icon2.png' %}" alt="">
+          </div>
+          <h3 class="f_600 t_color3">
+            Cloud solutions
+          </h3>
+          <p class="f_300 f_size_15 mb-30">
+            A cloud is not a mythical body, merely a reinvented way to compute. Using AWS tools we are excited to prove 
+            our competency in the demanding field.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="software_featured_item text-center mb_20">
+          <div class="s_icon">
+            <img src="{% static 'img/cloud/icon_shape.png' %}" alt="">
+            <img class="icon" src="{% static 'img/cloud/icon3.png' %}" alt="">
+          </div>
+          <h3 class="f_600 t_color3">
+            DevOps
+          </h3>
+          <p class="f_300 f_size_15 mb-30">
+            Traditional development cycles take too much time. Our trained professionals utilize best development practices to
+            develop products on schedule.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="design_developers_area sec_pad">
+  <div class="container">
+    <div class="sec_title text-center mb_70">
+      <h2 class="f_p f_size_30 l_height50 f_600 t_color3">
+        Developing infrastructures the right way
+      </h2>
+      <p class="f_300 f_size_16 mb-0">
+        Our software engineers follow the golden standrd. Fucntion as a code deploys environments with a few clicks!
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-lg-7 col-md-7">
+        <div class="design_img wow fadeInLeft">
+          <img class="img-fluid" src="{% static 'img/cloud/aws.png' %}" alt="">
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-5 d-flex align-items-center">
+        <div class="design_img_two wow fadeInRight">
+          <img class="img-fluid" src="{% static 'img/cloud/terraform.png' %}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="software_service_area sec_pad">
+<div class="container">
+  <div class="sec_title text-center mb_70" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+    <h2 class="f_p f_size_30 l_height50 f_600 t_color3">
+      Developing software that works
+    </h2>
+    <p class="f_300 f_size_16 mb-0">
+      
+      <br>Through professoinal knowledge and experience we produce quality products empowering our customers. 
+    </p>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-md-3">
+      <ul class="nav nav-tabs software_service_tab" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active show" id="programming-tab" data-toggle="tab" href="#programming" role="tab" aria-controls="programming" aria-selected="true">
+            Coding
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="frameworks-tab" data-toggle="tab" href="#frameworks" role="tab" aria-controls="frameworks" aria-selected="true">
+            Frameworks
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="devops-tab" data-toggle="tab" href="#devops" role="tab" aria-controls="devops" aria-selected="false">
+            DevOps
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="cloud-tab" data-toggle="tab" href="#cloud" role="tab" aria-controls="cloud" aria-selected="false">
+            Cloud solutions
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-lg-9 col-md-9">
+      <div class="tab-content software_service_tab_content">
+
+        <!-- Coding -->
+        <div class="tab-pane fade active show" id="programming" role="tabpanel" aria-labelledby="programming-tab">
+          <div class="row">
+            <div class="col-lg-5 col-md-6">
+              <div class="software_service_item mb_70" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <i class="fab fa-python"></i>
+                <h5 class="mt_30 mb_15">Python</h5>
+                <p>
+                  A versatile tool for creating websites, web and desktop applications. 
+                  Syntax simplicity makes development and support easy. Our go to tool for coding complex solutions.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 offset-lg-2 col-md-6">
+              <div class="software_service_item mb_70" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <i class="fas fa-gem"></i>
+                <h5 class="mt_30 mb_15">Ruby</h5>
+                <p>
+                  Developers like Ruby for its intuituve code allowing development of projects quicker. 
+                  Giant pool of open-source contributors ensures Ruby stays as one of top 10 coding languages on the market.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6">
+              <div class="software_service_item mb_70" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                <i class="fab fa-php"></i>
+                <h5 class="mt_30 mb_15">PHP</h5>
+                <p>
+                  Versatility and flexibility of PHP for web development needs no introduction. 
+                  One of the most supported languages on the market is a choice of countless of giant projects. 
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 offset-lg-2 col-md-6">
+              <div class="software_service_item mb_70" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <i class="fab fa-node-js"></i>
+                <h5 class="mt_30 mb_15">Node.js</h5>
+                <p>
+                  One of the most demanded frameworks on the market for web development. 
+                  An exciting web development tool produces great results for businesses of all sizes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Frameworks -->
+        <div class="tab-pane fade" id="frameworks" role="tabpanel" aria-labelledby="frameworks-tab">
+          <div class="row">
+            <div class="col-lg-5 col-md-6">
+              <div class="software_service_item mb_70" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <i class="fas fa-flask" ></i>
+                <h5 class="mt_30 mb_15">Django and Flask</h5>
+                <p>
+                  Although there are many more frameworks for Python, Django and Flask are some of 
+                  the best tools to build web applications. They are truly versatile and can support project of any size.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 offset-lg-2 col-md-6">
+              <div class="software_service_item mb_70" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <i class="devicon-rails-plain"></i>
+                <h5 class="mt_30 mb_15">Ruby on Rails</h5>
+                <p>
+                  With an active support of a large open-community Ruby on Rails remains one of 
+                  greatest choices for building web applications quickly.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6">
+              <div class="software_service_item mb_70" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                <i class="devicon-laravel-plain"></i>
+                <h5 class="mt_30 mb_15">Laravel</h5>
+                <p>
+                  An ample body of PHP experts and active open-source community support make Laravel a 
+                  very competitive framework to build web applications on. 
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 offset-lg-2 col-md-6">
+              <div class="software_service_item mb_70" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <i class="devicon-express-original"></i>
+                <h5 class="mt_30 mb_15">Express.js</h5>
+                <p>
+                  Framework for one of the most popular scripting languages on the market, 
+                  Express.js makes an excellent choice for responsive web applications.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- DevOps -->
+        <div class="tab-pane fade" id="devops" role="tabpanel" aria-labelledby="devops-tab">
+          <div class="row">
+            <div class="col-lg-5 col-md-6">
+              <div class="software_service_item mb_70">
+                <i class="fas fa-infinity"></i>
+                <h5 class="mt_30 mb_15">CI / CD</h5>
+                <p>
+                    Dynamic world deamands dynamic solutions in software development. 
+                    Continuous integration and continuous development secures an optimal pipeline 
+                    for on schedule product delivery.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 offset-lg-2 col-md-6">
+              <div class="software_service_item mb_70">
+                <i class="fas fa-code"></i>
+                <h5 class="mt_30 mb_15">Ansible</h5>
+                <p>
+                    Provides tools granting developers the ability to automate system management, 
+                    application deployment, problem solving and solution distribution to any machine within business or enterprise.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6">
+              <div class="software_service_item mb_70">
+                <i class="fas fa-terminal"></i>
+                <h5 class="mt_30 mb_15">Terraform</h5>
+                <p>
+                    With Terraform build change and version infrastructure safely and efficiently. 
+                    Infrastructure manages both, low level and high level components as a code and 
+                    frees up resources as it is less prone to human error.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 offset-lg-2 col-md-6">
+              <div class="software_service_item mb_70">
+                <i class="fab fa-docker"></i>
+                <h5 class="mt_30 mb_15">Docker</h5>
+                <p>
+                  Containerization is a cloud-native development that reduces wasted server resources.
+                  Integrated tools allow projects to be extremely scalable, efficient and low cost.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud -->
+        <div class="tab-pane fade" id="cloud" role="tabpanel" aria-labelledby="cloud-tab">
+          <div class="row">
+            <div class="col-lg-5 col-md-6">
+              <div class="software_service_item mb_70">
+                <i class="fab fa-aws"></i>
+                <h5 class="mt_30 mb_15">Migration to AWS</h5>
+                <p>
+                  We can migrate your existing on-premises data to a new cloud solution provided by AWS. Our staff
+                  will make a seamless transition of your organization to the cloud and will provide a comprehensive
+                  review of the architecture environment setup and provide support.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 offset-lg-2 col-md-6">
+              <div class="software_service_item mb_70">
+                <i class="fas fa-server"></i>
+                <h5 class="mt_30 mb_15">Serverless</h5>
+                <p>
+                  A large scale application can be daunting to maintain if it has a monolithic structure. AWS tools
+                  along with microservices and application containerization with Docker makes it easy to create, manage
+                  and scale any application.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6">
+              <div class="software_service_item mb_70">
+                <i class="fas fa-search"></i>
+                <h5 class="mt_30 mb_15">Architecture review</h5>
+                <p>
+                  We assess an organization's AWS architecture and provide our thorough review by our trained
+                  specialist. Our customers will receive a comprehensive report indicating the strengths and weaknesses
+                  of a system.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 offset-lg-2 col-md-6">
+              <div class="software_service_item mb_70">
+                <i class="fas fa-piggy-bank"></i>
+                <h5 class="mt_30 mb_15">Cost optimization</h5>
+                <p>
+                  Understanding the building blocks of AWS products permits us to provide cost optimization services.
+                  Our trained staff will pinpoint locations where costs can be optimized without compromising security,
+                  performance or data capacity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="software_featured_area_two sec_pad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="software_featured_img wow fadeInLeft" data-wow-delay="0.2s">
+          <img class="img-fluid" src="{% static 'img/cloud/featured_img1.png' %}" alt="">
+        </div>
+      </div>
+      <div class="col-lg-5 offset-lg-1 d-flex align-items-center pl-0">
+        <div class="software_featured_content">
+          <h2 class="f_700 f_size30 l_height_40 w_color f_p mb-30 wow fadeInRight" data-wow-delay="0.2s">
+            Businesses deserve software that works
+          </h2>
+          <p class="w_color f_300 mb_50 wow fadeInRight" data-wow-delay="0.3s">
+            A2 focuses on providing premiere AWS consulting and software development services. Nothing gets us going more 
+            than quality products solving customer problems. Our affection towards IT fuels our drive in getting 
+            the most of the computing world and facilitate our customer’s success. Look no further for trustworthy 
+            developers and AWS specialists, you have found A2.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="developer_product_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-flex align-items-center">
+        <div class="developer_product_content">
+          <h2 class="f_600 f_size_30 l_height30 t_color3 mb_50">
+            Our core focus
+          </h2>
+          <ul class="nav nav-tabs develor_tab mb-30" id="myTab2" role="tablist">
+            <!-- {% comment %} <li class="nav-item">
+              <a class="nav-link active" id="ansible-tab" data-toggle="tab" href="#ansible" role="tab" aria-controls="ansible" aria-selected="true">
+                Web page
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="terraform-tab" data-toggle="tab" href="#terraform" role="tab" aria-controls="terraform" aria-selected="false">
+                API
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="docker-tab" data-toggle="tab" href="#docker" role="tab" aria-controls="docker" aria-selected="true">
+                iOS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="aws-tab" data-toggle="tab" href="#aws" role="tab" aria-controls="aws" aria-selected="false">
+                Android
+              </a>
+            </li> {% endcomment %} -->
+            <li class="nav-item">
+              <a class="nav-link active" id="web-tab" data-toggle="tab" href="#web" role="tab" aria-controls="web" aria-selected="true">
+                Web
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="mobile-tab" data-toggle="tab" href="#mobile" role="tab" aria-controls="mobile" aria-selected="false">
+                Mobile 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="consulting-tab" data-toggle="tab" href="#consulting" role="tab" aria-controls="consulting" aria-selected="true">
+                Consulting
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="upgrade-tab" data-toggle="tab" href="#upgrade" role="tab" aria-controls="upgrade" aria-selected="false">
+                Upgrade
+              </a>
+            </li>
+          </ul>
+
+          <div class="tab-content developer_tab_content">
+            <div class="tab-pane fade show active" id="web" role="tabpanel" aria-labelledby="web-tab">
+              <p class="mb_40">
+                One size fits all approach does not work for businesses. We create custom applications 
+                for web and mobile platforms. Client-operated servers or cloud-based solutions by third
+                party vendors, send us your requirements and we will make it happen.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
+              <p class="mb_40">
+                Enhance productivity of your workforce or provide convenient gateway for users to 
+                interact with business by providing a cross-platform mobile application. Extend business 
+                reach, improve workflow, and security. Mobile applications have unlimited potential and scope.
+
+              </p>
+            </div>
+            <div class="tab-pane fade" id="consulting" role="tabpanel" aria-labelledby="consulting-tab">
+              <p class="mb_40">
+                Strong business requires strong solutions. Our experties lies within a number of IT related fields. 
+                We offer our knowledge to rely on in your decision making. We are open for consulting opportunities 
+                on many topics from computing solutions to GDPR compliance. 
+              </p>
+            </div>
+            <div class="tab-pane fade" id="upgrade" role="tabpanel" aria-labelledby="upgrade-tab">
+              <p class="mb_40">
+                Open your business to the power of modern IT solutions. Upgrade maximizes cost effectiveness. 
+                Software platforms run efficiently and at a reduced operating cost. Optimized platform, data in 
+                a secure storage solution, performance and security enhancements are only some of the benefits 
+                of a renovated system.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+        <img class="img-fluid" src="{% static 'img/cloud/work2.png' %}" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="prototype_service_area_two">
+  <div class="container custom_container">
+    <div class="sec_title text-center mb_70">
+      <h2 class="f_p f_size_30 l_height50 f_600 t_color3">
+        Testimonials
+      </h2>
+      <p class="f_300 f_size_16 mb-0">
+        Here's what our clients have to say about our services
+      </p>
+    </div>
+    <div class="service_carousel owl-carousel">
+      <div class="testimonials_item">
+        <div class="icon">
+          <img src="{% static '/img/testimonials/sumeet.jpg' %}" alt="">
+        </div>
+        <div class="person">
+          <span class="name f_600 f_size_20 l_height28 t_color2">Sumeet Maniar</span>
+          <br>
+          <span class="position f_size_14 t_color1">CEO / CTO WellBrain Inc.</span>
+        </div>
+        <p>
+          A2 has successfully delivered an app that's allowed us to generate revenue and interest. Their efforts have been critical in helping us give more people the tools to practice mindfulness.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include 'shared/partners.html' %}
+{% endblock content %}
