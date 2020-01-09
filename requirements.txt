@@ -51,7 +51,7 @@ semantic_version==2.5.0   # via awsebcli
 six==1.11.0               # via astroid, awsebcli, blessed, django-mailgun, docker, docker-compose, docker-pycreds, dockerpty, python-dateutil, websocket-client
 termcolor==1.1.0          # via awsebcli
 texttable==0.9.1          # via docker-compose
-urllib3==1.24.1           # via awsebcli, botocore, requests
+urllib3==1.24.2           # via awsebcli, botocore, requests
 wcwidth==0.1.7            # via awsebcli, blessed
 websocket-client==0.55.0  # via docker, docker-compose
 wrapt==1.11.0             # via astroid
